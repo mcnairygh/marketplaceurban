@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Market Place Urban</title>
+	<meta charset="UTF-8" />
+	 <meta name="description" content="Market Place Urban is the one stop shopping site for minority owned businesses. Search our listings, support black owned businesses, support black communities, support Black People.">
+  <meta name="keywords" content="Black owned Business, Black Lives Matter, Minority Business Support, Historically Under Utilized Business, Black Creativity, Shop black, Black restaurants, Blacks in Technology, Black Health Care, Black Mechanics, Black owned home improvement.">
+  <meta name="author" content="Eric McNairy Market Place URban">
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+          <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css" rel="stylesheet" /><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" />
+
+	<style type="text/css">body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+  height: 100%;
+  color: #777;
+  line-height: 1.8;
+}
+
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+   min-height: 400px;
+   border-style:double;
+  border-width:1px
+  border-color:black;
+}
+
+/* First image (Logo. Full height) */
+.bgimg-1 {
+  background-image: url('../images/marketplaceurbanws.PNG');
+  min-height: 100%;
+   min-height: 400px;
+   border-style:double;
+  border-width:1px
+  border-color:black;
+}
+
+/* Second image (products) */
+.bgimg-2 {
+  background-image: url("../images/marketplaceurbanws.PNG");
+ 
+   min-height: 400px;
+   border-style:double;
+  border-width:1px
+  border-color:black;
+}
+
+/* Third image (Contact) */
+.bgimg-3 {
+  background-image: url("../images/marketplaceurbanws.PNG");
+  min-height: 400px;
+  
+   border-style:double;
+  border-width:1px
+  border-color:black;
+}
+
+.affiliate {min-height: 1750px;max-height:3500px; min-width: 1200px;}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  height:300px;
+  
+}
+
+.logo img{
+  max-height:200px;
+  min-height:200px;
+  max-width:100%;
+ background-color:white;
+}
+
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  margin-right:40px;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #C0C0C0;
+  color: white;
+}
+
+.topnav .search-container {
+  float: right;
+}
+
+.topnav input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
+
+.topnav .search-container button {
+  float: right;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.topnav .search-container button:hover {
+  background: #ccc;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+    
+    
+  }
+  
+  .flip-card  .flip-card-front .flip-card-back {
+   height:150px;
+    font-size:2vw; 
+  }
+  
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .logo img{
+  max-height:150px;
+  min-height:150px;
+ 
+  
+ }
+ 
+  .flip-card  .flip-card-front .flip-card-back{
+   height:150px;
+    font-size:2vw; 
+  }
+}
+
+
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 40%;
+  border-radius: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+.cardcontainer {
+  padding: 2px 16px;
+}
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+ 
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  background-color: white;
+  padding: 10px;
+  
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #fff;
+  color: black;
+ 
+}
+
+.flip-card-back {
+  background-color: #2980b9;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+.flip-card-back p {
+  text-align: justify;
+  margin:5px;
+}
+.flip-card-back a {
+  text-align: center;
+  color:white;
+  
+}
+
+ 	</style>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-153650207-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-153650207-1');
+</script>
+
+
+ 
+
+</head>
+<body>
+<!-- Navbar (sit on top) -->
+<div class="w3-top w3-col l12">
+ <div class="topnav" id="myTopnav">
+  <a class="active" href="#home" onclick="myToggle()">Home</a>
+  <a href="#about" onclick="myToggle()">About</a>
+  <a href="#add_business" onclick="myToggle()">Add Listing</a>
+  <a href="#contact" onclick="myToggle()">Contact</a>
+ 
+   <a href="javascript:void(0);" class="icon" onclick="myToggle()">
+    <i class="fa fa-bars"></i>
+  </a>
+ </div>
+ 
+</div>
+ 
+<div class="w3-container " style="padding:50px 36px">
+    
+  <h3>Market Place Urban </h3>
+ 
+ 
+  <p class="w3-xlarge w3-serif">
+  <i>"Don't Wait For Opportunity, Create It!"</i></p>
+ 
+</div>
+<!-- First Parallax Image with Logo Text -->
+
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+ <div class="w3-display-middle" style="white-space:nowrap;"><h1><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">MARKET PLACE <span class="w3-hide-small"> URBAN </span></h1>
+ </div>
+</div>
+
+<!-- Container (About Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="about">
+<h3 class="w3-center">ABOUT Market Place Urban</h3>
+
+<p class="w3-center"><span style="font-style:fancy;font-size:1vw;color:blue"><em>I Love Urban Culture</em></span></p>
+
+<p>We have created <span style="font-style:fancy;font-size:1vw">&quot;Market Place Urban&quot;</span> website/blog to be a one
+stop shopping alternative. Our primary focus is businesses of color that support communities of color. We present well known brands as well as 
+new trending products and services. We encourage you to tell us about your experiences with products or services. Your voice counts! Your ideas and suggestions for new products and services are welcomed and greatly appreciated.</p>
+
+<div class="w3-row">
+<div class="w3-col m6 w3-center w3-padding-large">
+<p><b>Eric D. McNairy MBA</b></p>
+<br />
+<img alt="Photo of Me" class="w3-round w3-image w3-opacity w3-hover-opacity-off" height="300" src="/images/mpulogo.png" width="300" /></div>
+<!-- Hide this text on small devices -->
+
+<div class="w3-col m6 w3-hide-small w3-padding-large">
+<p>This site is owned and operated by BDR Events & Tours LLC. dba Market Place Urban is a participant in affiliate advertising programs designed to provide a means for sites to earn revenue by advertising and linking to affiliate products and services.
+
+BDR Events & Tours LLC also participates in multiple affiliate programs including Amazon, Bluehost, Clickbank, CJ, ShareASale, and other sites. BDR Events & Tours LLC is compensated for referring traffic and business to these companies.t.</p>
+</div>
+</div>
+
+<p class="w3-large w3-center w3-padding-16">Product Categories:</p>
+
+<p class="w3-wide">Travel / Transportation</p>
+
+<div class="w3-light-grey">
+ <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%
+ </div>
+</div>
+
+<p class="w3-wide">Health & Beauty</p>
+
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+</div>
+
+<p class="w3-wide">Business / Finance</p>
+
+<div class="w3-light-grey">
+<div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:75%">75%</div>
+</div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+<div class="w3-quarter w3-section"><span class="w3-xlarge">14+</span><br />
+Suppliers</div>
+
+<div class="w3-quarter w3-section"><span class="w3-xlarge">3+</span><br />
+Products</div>
+
+<div class="w3-quarter w3-section"><span class="w3-xlarge">11+</span><br />
+Services</div>
+
+<div class="w3-quarter w3-section"><span class="w3-xlarge">3+</span><br />
+Cities</div>
+</div>
+<!-- Second Parallax Image with Products / Services Text -->
+
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Listings</span></div>
+</div>
+
+ 
+
+<!-- Container (Products / Services Section) -->
+
+<div class="w3-content w3-container w3-padding-64" id="products">
+
+<h2 class="w3-center">Black Owned Business:</h2>
+ <div class="search-container" style="padding-bottom:20px">
+
+     
+    <form id="search_listing"   method="get">
+      <input id="isearch" type="text" placeholder="Search products and services.." name="search">
+      
+       </form>
+      <button id="searchbutton"  type="button"><i class="fa fa-search"></i></button>
+       <button id="clearbutton"  type="button"><i class="fa fa-trash-o" aria-hidden="true"></i> Clear Search</button>
+   
+  </div>
+  
+  
+  <br/>
+ <div id="myBtnContainer">
+   
+  <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+  
+   
+  <!-- button class="btn" onclick="filterSelection('products')"> Health/Beauty</button>
+  <button class="btn" onclick="filterSelection('services')"> Clothing</button>
+   <button class="btn" onclick="filterSelection('services')"> Food/Beverage</button>
+   <button class="btn" onclick="filterSelection('services')"> Services</button -->
+ 
+  
+ 
+
+</div >
+<!-- products Gallery Grid -->
+<div class="row" >
+    
+ <div class="Search_Results" style="margin-bottom:10px;">
+     
+     <h2>Search Results</h2>
+     
+ </div><!-- End of Search Results-->
+ </div>
+ 
+<div class="row" > 
+ <div class="Current_Listing" >
+     <h2>Current Listings</h2>
+     
+</div> <!-- Current Listings -->
+</div>
+
+
+<div class="row" > 
+ <div class="Most_Recent" >
+     
+    <h2>Most Recent Business Ads</h2> 
+  
+   
+  
+  
+  </div> <!-- end of default listings -->
+  
+<!-- END GRID -->
+</div>
+
+
+<h2 class="w3-center">Affiliate Products</h2>
+
+<p class="w3-center"><em>Here are some of the products we are currently promoting<br />
+Click on the images to shop!</em></p>
+<br />
+<!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+<div class="w3-row-padding w3-center">
+<div class="w3-col m3"><a href="sandals.html" target="self">Sandals All Inclusive Vacations</a></div>
+
+<div class="w3-col m3"><a href="wigsbuy.html" target="self">WigsBuy </a></div>
+
+<div class="w3-col m3"><a href="dtlr.html" target="self">DTLR Clothing & Shoes</div>
+
+<div class="w3-col m3"><a href="dtlr.html" target="self">DTLR Clothing & Shoes</div>
+<!--div class="w3-col m3"><a href="sandals.html" target="self"><img alt="Quiet ocean" class="w3-hover-opacity" onclick="onClick(this)" src="/w3images/p4.jpg" style="width:100%" /></div -->
+</div>
+
+<div class="w3-row-padding w3-center w3-section">
+<div class="w3-col m3"><a href="bebe.html">BeBe Clothing and Accessories  </a></div>
+
+<div class="w3-col m3"><a href="skis.html">Skis.com  </a></div>
+
+<div class="w3-col m3"><a href="suunto.html">Suunto.com  </a></div>
+
+<div class="w3-col m3"><a href="factoryoutlet.html">Factory Outlet </a></div>
+<button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button></div>
+</div>
+<!-- Modal for full size images on click-->
+
+<div class="w3-modal w3-black" id="modal01" onclick="this.style.display='none'">
+<div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64"><img class="w3-image" id="img01" />
+<p class="w3-opacity w3-large" id="caption">&nbsp;</p>
+</div>
+
+</div>
+
+<!-- Third Parallax Image with products Add My Business -->
+
+<div  class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">ADD LISTING</span></div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+
+<div id="add_business" class="w3-content w3-container w3-padding-64" >
+<h3 class="w3-center">We Want You!!!</h3>
+
+<p class="w3-center"><em>We are offering free listings for all new <span style="font-weight:bold;font-style:oblique">MINORITY BUSINESSES!</span></em></p>
+
+<div class="w3-row w3-section">
+ 
+
+<div class="w3-col m3 l4">
+    <img src="../images/smallbiz.png"  width="100%">
+</div>
+
+<div class="w3-col m8 w3-panel">
+
+
+<p>Let us help promote your business. We have created this service to assist minority business owners in the promotion of their business. Our goal is to list every moniority owned business country wide. This service is <b>FREE!</b> We only ask that you tell your friends and customers about our service and give us a like on social media.</p>
+<p><span style="font-weight:bold;color:red"> All Data Fields Are Required For Each Listing!!!</span></p>
+
+<p>Once your business listing is submitted you will receive an acknowledgement email. In this email you will see a request for a business logo to be placed with your listing. Your listing will be in the pending status until we receive your business logo image.</p>
+
+<p style="font-style: oblique;">You may request via email to deactivate your business listing at anytime. Your listing shall be deactivated within 2 business days upon receipt and acknowledgement of your deactivation request.</p>
+<form id="ad_listing"  action="" method="post"  >
+ 
+
+<div class="w3-col l12"><input id="bname" class="w3-input w3-border "  name="Bname" placeholder="Business Name" required type="text" /></div>
+ 
+ <div class="w3-threequarter">
+    <label>Select Business Type:</label>
+    <select id="btype" name=Btype">
+        <option value='products'>Product</option>
+        <option value='services'>Service</option>
+    </select>
+</div>
+
+ <div class="w3-threequarter">
+    <label>Select Business Category:</label>
+    <select id="busicat" name="Bcategory">
+        
+    </select>
+</div>
+<div class="w3-col l12 s12">
+<textarea id='bdesc' class="w3-input w3-border" style="margin-bottom:5px" name="Busidesc" placeholder="Business Description"  maxlength="200"  title="Business description max 200 characters" required type="text" /></textarea>
+</div>
+<div class="w3-col l12 s12">
+<input id='bwebsite' class="w3-input w3-border" type="url" style="margin-bottom:5px" name="Bwebsite" placeholder="http://www.website.com " pattern="https?://.+" title="Include http://"  required  />    
+</div>
+<div class="w3-col l6 s12"> 
+ 
+<input id='bfname' class="w3-input w3-border" style="margin-bottom:5px" name="Bfname" placeholder="First Name"  required type="text" /> </div>
+<div class="w3-col l6 s12"><input id='blname' class="w3-input w3-border" style="margin-bottom:5px" name="Blname" placeholder="Last Name"  required type="text" /></div>
+
+<div class="w3-col l6 s12"> <input id='bemail' class="w3-input w3-border" style="margin-bottom:5px" name="Bemail" placeholder="Business Email"  required type="email"  maxlenght="50" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" /> </div>
+<div class="w3-col l6 s12"><input id='bcontact' class="w3-input w3-border" style="margin-bottom:5px" name="Bcontact" placeholder="Business Contact#"  maxlenght="10" required type="text" /></div>
+
+<div class="w3-col s12 l8"><input id='baddr1' class="w3-input w3-border" style="margin-bottom:5px" name="Baddrl1" placeholder="Business Address Line 1" maxlenght="30"  required type="text" /> </div>
+<div class="w3-col s12 l8"> <input id='baddr2' class="w3-input w3-border" style="margin-bottom:5px" name="Baddrl2" placeholder="Business Address Line 2"  maxlenght="30"  type="text" /></div>
+
+<div class="w3-half"><input id='bcity' class="w3-input w3-border" style="margin-bottom:5px" name="Bcity" placeholder="City"  required type="text" /></div>
+<div class="w3-col s6 l1"><input id='bstate' class="w3-input w3-border" style="margin-bottom:5px;margin-left:2px" name="Bstate" placeholder="State"  maxlength="2" required type="text"  pattern="[A-Za-z]{2}" title="Two letter state abbreviation"/></div>
+<div class="w3-col s6 l4"><input id='bzipcd' class="w3-input w3-border" style="margin-bottom:5px;margin-left:3px" name="Bzipcd" placeholder="Zipcode" maxlength="5" required type="text" /></div>
+<button id="adbutton" class="w3-button w3-black w3-right w3-section"  type="submit">Submit Listing</button>
+
+</form>
+
+</div>
+
+
+<div id="server-results"><!-- For server results --></div>
+</div>
+<p style="font-size:1vw">*** Market Place Urban reserves the right to reject or remove any listing that is inconsistent with our values or business strategy.</p>
+</div>
+
+
+
+
+
+<!-- Third Parallax Image with products CONTACT -->
+
+<div  id="contact" class="bgimg-3 w3-display-container w3-opacity-min">
+<div class="w3-display-middle" style="white-space:nowrap;"><span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">CONTACT</span></div>
+</div>
+
+
+<!-- Container (Contact Section) -->
+
+<div class="w3-content w3-container w3-padding-64">
+<h3 class="w3-center">WHERE I WORK</h3>
+
+<p class="w3-center"><em>I&#39;d love your feedback!</em></p>
+
+<div class="w3-row w3-padding-32 w3-section">
+<div class="w3-col m4 w3-container"><img class="w3-image w3-round" src="../images/dfwmap.png" style="width:100%" /></div>
+
+<div class="w3-col m8 w3-panel">
+<div class="w3-large w3-margin-bottom">Dallas, Tx<br />
+Phone: 855 953 8746<br />
+Email: info@bdreventsandtours.com</div>
+
+<p>Give us a call, or leave me a note:</p>
+
+<form action="phpsrc/phpFormMailer_contact.php" method="post"  target="_blank">
+<div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+<div class="w3-half"><input class="w3-input w3-border" name="Name" placeholder="Name" required type="text" /></div>
+
+<div class="w3-half"><input class="w3-input w3-border" name="Email" placeholder="Email"  required type="text" /></div>
+</div>
+<input class="w3-input w3-border" name="Message" placeholder="Message"  required type="text" />
+<button class="w3-button w3-black w3-right w3-section" type="submit">SEND MESSAGE</button>
+    
+</form>
+</div>
+</div>
+</div>
+<!-- Footer -->
+
+<footer class="w3-center w3-black w3-padding-32 w3-opacity w3-hover-opacity-off"><a class="w3-button w3-light-grey" href="#home">To the top</a>
+
+<div class="w3-xlarge w3-section">&nbsp;</div>
+
+<p>Powered by <a class="w3-hover-text-green" href="http://www.mcnairyconsultingsvcs.com" target="_blank" title="McNairy Consulting">McNairy Consulting Svcs.com</a> | <a href="https://www.bdreventsandtours.com/privacy.php">Privacy</a> | <a href="https://www.bdreventsandtours.com/tos.php">Terms Of Service</a></p>
+</footer>
+
+<!--->
+ <!-- Capture Modal -->
+  
+        
+</div>
+</div>
+<!--==============================footer=================================-->
+<script>
+function myFunction() {
+  var x = document.getElementById("demo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+ 
+      
+      
+      
+      
+   $(document).ready(function(){
+  
+    
+  clear_search_results();
+        
+  load_current_listings();        
+        
+        var $busicat = ["Books/Magazine",
+        "Movies",
+        "Blog/Vlog",
+         
+        
+         
+         
+        "Education",
+         "Entertainer",
+        "Musician/Band",
+        "Writer",
+        "Baby Goods/Kids Goods",
+        "Clothing",
+        "Electronics",
+        "Food/Beverages",
+        "Furniture",
+        "Games/Toys",
+        "Health/Beauty",
+        "Jewelry/Watches",
+        "Pet Supplies",
+        "Automobiles and Parts",
+        "Church",
+        "Computers/Technology",
+        "Consulting/Business Services",
+        "Insurance Company",
+        "Internet/Software",
+        "Legal/Law",
+        "Non-Profit Organization",
+         "Travel/Leisure ",
+          "Transportation",
+        "Bar",
+         "Hotel",
+        "Movie Theatre",
+        "Museum/Art Gallery",
+        "Outdoor Gear/Sporting Goods",
+        "Real Estate",
+        "Restaurant / Cafe",
+         "Spas/Beauty/Personal Care"];
+ 
+        $busicat.sort();  
+
+
+        for (const val of $busicat) {
+        $('#busicat').append($(document.createElement('option')).prop({
+        value: val,
+        text: val.charAt(0).toUpperCase() + val.slice(1)
+          }))
+        } 
+        
+         
+         
+         
+         
+    }); // Document Ready
+ 
+    $(window).on('load',function(){
+        if (document.cookie.indexOf('visited=true') == -1){
+            // load the overlay
+            $('#leadModal').modal('show');
+        var year = 1000*60*60*24*365;
+        var expires = new Date((new Date()).valueOf() + year);
+        document.cookie = "visited=true;expires=" + expires.toUTCString();
+    
+        }
+    }); 
+   
+     $("#searchbutton").click(function(){
+   
+    search_listings();
+    return;
+    });
+    
+    
+    
+    // Modal Image Gallery
+    function onClick(element) {
+    document.getElementById("img01").src = element.src;
+    document.getElementById("modal01").style.display = "block";
+    var captionText = document.getElementById("caption");
+    captionText.innerHTML = element.alt;
+    }
+
+
+
+    
+    // button gallery
+
+    filterSelection("all");
+    
+    function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+        for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+        }
+    }
+
+    // -- //
+    function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+        }
+    }
+    
+    // -- //
+    function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+        for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+            arr1.splice(arr1.indexOf(arr2[i]), 1);     
+            }
+        }
+    element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    
+    for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+    });
+  
+  
+    
+    // Load All Listings
+    
+    function load_current_listings(){
+    
+    $.ajax({ url: 'phpsrc/load_listings.php',
+    data: {},
+    type: 'get',
+    dataType: 'JSON',
+    success:function(response) {
+              
+               var xlresult =' ';
+               var spbutton = " ";
+               var len = response.length;
+                for(var i=0; i<len; i++){
+                    var lid = 'id="'+ response[i].id + '"' ;
+                    var lidx = response[i].id ;
+                    var xlname = response[i].lname;
+                    var lname = xlname.substring(0, 25);
+                    
+                    var xldescription =  response[i].ldescription;
+                    var ldescription = xldescription ;
+                    
+                    var lcity = response[i].lcity;
+                    var lstate = response[i].lstate;
+                    var lcategory = response[i].lcategory;
+                    var ltype = response[i].ltype;
+                    var llogo = response[i].llogo;
+                    var xlclass = 'flip-card current_listing column w3-col s6 l3 w3-padding' +' '+ ltype ;
+                    var lclass = 'class ="'+xlclass+'"';     
+                    var limagesrc = ' '+'src ="images/logos/'+llogo+'"'; 
+                    
+                         
+                    
+                    
+                        lresult_str1 =  '<div'+ ' ' + lclass +' '+ lid + '><div class="flip-card-inner"><div class="flip-card-front">';
+                        lresult_str2 =  '<img' + limagesrc + 'alt="'+lcategory+'" style="width:100%;height:90%"><p style="font-size:1vw">'+lname+'</p></div>';
+                        lresult_str3 =  '<div class="flip-card-back">';
+                        lresult_str4 =  '<h4 style="text-align:center">'+lname+'</h4> ';
+                        lresult_str5 =  '<p style="text-align:center">'+lcategory+'</p>'; 
+                        lresult_str6 =  '<p  style="text-align:center">'+lcity+','+lstate+'</p>';
+                        lresult_str7 =  '<p style="text-align:center"><a target="new" href="businesslisting.html?biz='+lidx+'">Click For More Details...</a></p></div></div></div>';   
+                    
+                       
+                        xlresult =  xlresult + lresult_str1 + lresult_str2 + lresult_str3 + lresult_str4 + lresult_str5 + lresult_str6 + lresult_str7;
+                        lpbutton =  '<button class="btn" onclick="filterSelection('+ltype+')"> '+ltype+'</button>';
+                        
+                        if(lpbutton != spbutton) {
+                        
+                        $("#myBtnContainer").append(lpbutton);
+                        
+                        spbutton = lpbutton;
+                        }
+                 }
+                 $(".Current_Listing").append(xlresult);
+	       		$(".Current_Listing").show();
+	       		
+        }
+        });
+    }
+   
+   
+    
+    //------ //
+    //Clear Search
+     
+    $("#clearbutton").click(function(){
+    
+    clear_search_results();
+    
+    });
+    
+    // Search Listings                      ------//
+  
+    function search_listings() {
+    clear_search_results();
+    
+    if($("#isearch").val() != "") {
+    result_str = "";
+    
+    $.ajax({ url: 'phpsrc/search_list.php',
+    data: {bsearch: $("#isearch").val() },
+    type: 'get',
+    dataType: 'JSON',
+    success:function(iresponse) {
+               var result_str =' ';
+               var xresult =' ';
+               var slen = iresponse.length;
+                
+                for(var i=0; i<slen; i++){
+                    var bid = 'id="'+ iresponse[i].id + '"' ;
+                    
+                    var xbname = iresponse[i].bname;
+                    var bname = xbname.substring(0, 25);
+                    
+                    var xbdescription =  iresponse[i].bdescription;
+                    var bdescription = xbdescription.substring(0, 30);
+                    
+                    var bcity = iresponse[i].bcity;
+                    var bcategory = iresponse[i].bcategory;
+                    var blogo = iresponse[i].blogo;
+                    
+                    
+                    var xbclass = 'flip-card current_listing column w3-col s6 l3 w3-padding' +' '+ bcategory ;
+                    var bclass = 'class ="'+xbclass+'"';     
+                    var imagesrc = ' '+'src ="images/logos/'+blogo+'"'; 
+                    
+                         
+                    
+                    
+                        result_str1 =  '<div'+ ' ' + bclass +' '+ bid + '><div class="flip-card-inner"><div class="flip-card-front">';
+                        result_str2 =  '<img' + imagesrc + 'alt="'+bcategory+'" style="width:100%;height:90%"><p style="font-size:1vw">'+bname+'</p></div>';
+                        result_str3 =  '<div class="flip-card-back">';
+                        result_str4 =  '<h4>'+bname+'</h4> ';
+                        result_str5 =  '<p>'+bcategory+'</p>'; 
+                        result_str6 =  '<p>'+bdescription+'</p>';
+                        result_str7 =  '</div></div></div>';   
+    
+                        xresult =  xresult + result_str1 + result_str2 + result_str3 + result_str4 + result_str5 + result_str6 + result_str7;
+                    
+            }
+	              $(".Search_Results").append(xresult);
+	              
+	       		$(".Search_Results").show();
+	       	 
+        }
+    });
+   }
+  }
+  
+  
+  
+     // Add Business listing  
+  
+    var mybname=$("#bname").val();
+    var myemail=$("#bemail").val();
+    $("#ad_listing").unbind('submit');
+    $("#ad_listing").submit(function(event){
+	event.preventDefault(); //prevent default action 
+	
+	var request_method = $(this).attr("method"); //get form GET/POST method
+	
+     $.ajax({ url: 'phpsrc/add_listing.php',
+     data: {bname: $("#bname").val(), 
+         btype: $("#btype").val(), 
+         bcategory: $("#busicat").val(),  
+         bdescription: $("#bdesc").val(),
+         bwebsite: $("#bwebsite").val(), 
+         bfname: $("#bfname").val(), 
+         blname: $("#blname").val(),  
+         bemail: $("#bemail").val(),
+         bcontact: $("#bcontact").val(), 
+         baddr1: $("#baddr1").val(), 
+         baddr2: $("#baddr2").val(),  
+         bcity: $("#bcity").val(),
+         bstate: $("#bstate").val(), 
+         bzipcd: $("#bzipcd").val(),
+         blogo: $("#blogo").val()
+         },
+    type: 'post',
+    success:function(response) {
+               var blisting = response;
+               if(blisting == "Your business listing was successfully created!"){
+               alert(blisting);
+               $("#ad_listing")[0].reset();
+               }
+               
+               $("#server-results").html(response);
+        }
+    });
+   });
+    
+    
+    
+    function myToggle() {
+    var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    
+    
+    function clear_search_results(){
+   	   $("div").remove(".search_listing"); // remove previous search results.
+   	    $(".Search_Results").hide();
+   	     $(".Most_Recent").show();
+   	     $(".Current_Listings").show();
+    }
+    
+    
+    }
+
+
+</script>
+</body>
+</html>
